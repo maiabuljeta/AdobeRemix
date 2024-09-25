@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADOBE REMIX - Your Guide to Creative Success</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary-color: #6e8efb;
+            --secondary-color: #a777e3;
+            --accent-color: #ff6b6b;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 30px;
+        }
+
+        .cta-button:hover {
+            background-color: #ff4757;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .features {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .photo-area {
+            background-color: #f0f0f0;
+            height: 250px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            color: #666;
+            overflow: hidden;
+        }
+
+        .ebook-display {
+            background-color: #f9f9f9;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .ebook-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .ebook-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .ebook-content p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .ebook-mockup {
+            max-width: 300px;
+            margin: 0 auto;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .ebook-mockup:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-up {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ADOBE REMIX</h1>
+            <p>Your Guide to Creative Success</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Unlock Your Creative Potential</h2>
+            <p>Feeling lost in complex menus and toolbars, spending time searching for basic functions? Get started right away with Adobe Remix. 50 pages of software tutorials and creativity tips.</p>
+            <a href="https://buy.stripe.com/eVa5na8n35iK0s8cMM" class="cta-button">Get Your Copy Now</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature animate-fade-in-up">
+                    <div class="photo-area">Photo Area 1</div>
+                    <h3>Master Adobe Creative Cloud</h3>
+                    <p>Learn Photoshop, Premiere, Illustrator, and more in one comprehensive guide.</p>
+                </div>
+                <div class="feature animate-fade-in-up">
+                    <div class="photo-area">Photo Area 2</div>
+                    <h3>Unlock Your Creativity</h3>
+                    <p>Discover techniques to overcome writer's block and boost your creative output.</p>
+                </div>
+                <div class="feature animate-fade-in-up">
+                    <div class="photo-area">Photo Area 3</div>
+                    <h3>Join a Global Community</h3>
+                    <p>Connect with creatives worldwide and showcase your work on your own website.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ebook-display">
+        <div class="container">
+            <div class="ebook-content">
+                <h2>Introducing ADOBE REMIX</h2>
+                <p>A complete beginner's guide to a creative life with Adobe Creative Cloud</p>
+            </div>
+            <img src="/api/placeholder/300/400" alt="Adobe Remix eBook Cover" class="ebook-mockup">
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Transform Your Creative Journey</h2>
+            <p>You're feeling lost in complex menus and toolbars, wasting time searching for basic functions. You're thinking you'll never be able to become tech-savvy. There's no such thing as a one-page guide to become ready to use software as complicated as Photoshop…or is there?</p>
+            <p>After reading this, you will be able to start a podcast, edit videos, replace any clothing item in an image, have a 30-day social media posting plan, overcome writer's block, have a website to showcase your work, and much more.</p>
+            <p>After 11 years of using Adobe Creative Cloud and being an educator at a Media Arts Lab, I finally decided to bring together all the techniques I have used to teach my students and write this book.</p>
+            <p>When you learn the Adobe Suite, you are joining a worldwide community of creatives.</p>
+            <h3>Go from frustration to action.</h3>
+            <h3>Get on track with the creative life you deserve.</h3>
+            <a href="https://buy.stripe.com/eVa5na8n35iK0s8cMM" class="cta-button">Get Your Copy Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ADOBE REMIX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        gsap.from(".animate-fade-in-up", {
+            duration: 0.8,
+            y: 30,
+            opacity: 0,
+            stagger: 0.2,
+            ease: "power3.out"
+        });
+    </script>
+</body>
+</html>
